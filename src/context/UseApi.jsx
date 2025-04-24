@@ -24,7 +24,6 @@ function UseApi({ children }) {
             }
 
             const responseData = await response.json()
-            console.log("API Response:", responseData)
             setData(responseData)
             setLoading(false)
             return responseData // Devuelve los datos para que puedan ser utilizados en el componente Hero
